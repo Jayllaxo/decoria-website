@@ -27,16 +27,26 @@
     <nav class="navbar">
 
         <div class="search">
-            <img src="images/søge loop.png" alt="Søge ikon" class="loop"/>
+        <img src="images/søge loop.png" alt="Søge ikon" class="loop"/>
 
-            <input type="search" placeholder="Søg">
+        <input type="search" placeholder="Søg">
         </div>
 
-        <div class="burger-menu">
+        <div class="burger-menu" id="burgerMenu">
             ☰
         </div>
 
     </nav>
+
+<!--Menuen der popper frem-->
+    <div class="burger-pop" id="burgerPop">
+
+        <a href="#">Design</a>
+        <a href="#">Populære design</a>
+        <a href="#">Pre-pakker</a>
+        <a href="#">Inspiration</a>
+        <a href="#">Om os</a>
+    </div>
 
 </header>
 
@@ -78,7 +88,6 @@
 
 
     <!--PRODUKT-->
-
     <section class="product-section">
 
         <h2>Pakker</h2>
@@ -115,7 +124,6 @@
 
 
     <!--SÅDAN FUNGERER DET -->
-
     <section class="how-it-works">
 
         <h2>Sådan fungerer plakaterne</h2>
@@ -209,23 +217,20 @@
 
 </main>
 
-
-<!--INSTAGRAM -->
+<!--INSTAGRAM sektion -->
 
 <section class="instagram">
 
     <p>Følg os og bliv inspireret</p>
 
-    <div class="instagramlogo">
-
-        <img src="images/instaglogo.png" alt="Instagram logo"/>
-    </div>
+        <a href="https://www.instagram.com/the_official_decoria/" target="_blank">
+        <img src="images/instaglogo.png" alt="Instagram logo" class="instagramlogo">
+            </a>
 
 </section>
 
 
 <!--FOOTER -->
-
 <footer>
 
     <div>
@@ -247,6 +252,7 @@
 
 </footer>
 
+<script src="java.js"></script>
 
 </body>
 </html>
