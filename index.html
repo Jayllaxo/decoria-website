@@ -1,10 +1,258 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+
+    <!-- Gør siden responsiv på mobil -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Decoria</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700&family=Puritan:wght@400;700&display=swap"
+          rel="stylesheet">
+
 </head>
 <body>
+
+<header>
+
+    <div class="top-header">
+        <img src="images/decoria logo ramme.png" alt="Decoria logo"/>
+    </div>
+
+    <nav class="navbar">
+
+        <div class="search">
+            <img src="images/søge loop.png" alt="Søge ikon" class="loop"/>
+
+            <input type="search" placeholder="Søg">
+        </div>
+
+        <div class="burger-menu" id="burgerMenu">
+            ☰
+        </div>
+
+    </nav>
+
+    <!--Menuen der popper frem-->
+    <div class="burger-pop" id="burgerPop">
+
+        <a href="#">Design</a>
+        <a href="#">Populære design</a>
+        <a href="#">Pre-pakker</a>
+        <a href="#">Inspiration</a>
+        <a href="#">Om os</a>
+    </div>
+
+</header>
+
+<main>
+
+    <!--HERO-->
+
+    <section class="hero">
+
+        <div class="hero-text">
+
+            <p class="hero-small-text">
+                Én plakat. Mange udtryk.
+            </p>
+
+            <h1>
+                Gør din væg<br>
+                til din egen!
+            </h1>
+
+            <p>
+                Interaktiv plakat hvor du selv
+                kan vælge farve, vase og
+                design efter humør, sæson og stil.
+            </p>
+
+        </div>
+
+
+        <div class="hero-image">
+            <img src="images/vasemedtulip.png" alt="Grøn vase med tulipaner"/>
+        </div>
+
+        <a href="#" class="button">
+            Design her
+        </a>
+
+    </section>
+
+
+    <!--PRODUKT-->
+    <section class="product-section">
+
+        <h2>Pakker</h2>
+
+        <div class="product-card">
+
+            <button class="arrow-left">
+                ‹
+            </button>
+
+            <div class="product">
+
+                <img src="images/plakat.jpg"
+                     alt="Decoria efterårsplakat">
+
+                <p>
+                    <strong>Efterår</strong><br>
+                    199 kr.
+                </p>
+
+            </div>
+
+            <button class="arrow-right">
+                ›
+            </button>
+
+            <a href="#" class="button">
+                Se mere
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!--SÅDAN FUNGERER DET -->
+    <section class="how-it-works">
+
+        <h2>Sådan fungerer plakaterne</h2>
+
+
+        <div class="step">
+
+            <div class="number">
+                1
+            </div>
+
+            <div>
+                <h3>Vælg din plakat</h3>
+
+                <p>
+                    Vælg det design der passer bedst
+                    ind i dit hjem.
+                </p>
+            </div>
+
+        </div>
+
+
+        <div class="step">
+
+            <div class="number">
+                2
+            </div>
+
+            <div>
+                <h3>Skift design</h3>
+
+                <p>
+                    Skift vasen ud og giv den
+                    et nyt udtryk med blomster.
+                </p>
+            </div>
+
+        </div>
+
+
+        <div class="step">
+
+            <div class="number">
+                3
+            </div>
+
+            <div>
+                <h3>Nyt udtryk</h3>
+
+                <p>
+                    Giv dit hjem nyt liv, lige når det
+                    passer dig.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- VORES HISTORIE-->
+
+    <section class="history">
+
+        <h2>Vores historie</h2>
+
+        <div class="history-content">
+
+            <img src="images/historie.jpg"
+                 alt="Decoria">
+
+            <div>
+
+                <p>
+                    Vi tror på, at alle skal have
+                    muligheden for at kunne
+                    personliggøre deres hjem
+                    på en nem og simpel måde.
+                </p>
+
+                <a href="#">
+                    Læs mere her →
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+<!--INSTAGRAM sektion -->
+
+<section class="instagram">
+
+    <p>Følg os og bliv inspireret</p>
+
+    <a href="https://www.instagram.com/the_official_decoria/" target="_blank">
+        <img src="images/instaglogo.png" alt="Instagram logo" class="instagramlogo">
+    </a>
+
+</section>
+
+
+<!--FOOTER -->
+<footer>
+
+    <div>
+        <p>Privatlivspolitik</p>
+    </div>
+
+    <div class="footer-logo">
+
+        <img src="images/decriatekst.png" alt="Decoria"/>
+    </div>
+
+    <div>
+        <p>
+            Kontakt<br>
+            Lyngvej 21<br>
+            4800 Køge
+        </p>
+    </div>
+
+</footer>
+
+<script src="java.js"></script>
 
 </body>
 </html>
