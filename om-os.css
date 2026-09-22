@@ -1,0 +1,393 @@
+/* ==================================================
+       GENERELLE INDSTILLINGER
+   ================================================== */
+
+    /* Fjerner standard margin og padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Grundindstillinger for hele siden */
+body {
+    font-family: "Puritan", sans-serif;
+
+    color: #111;
+
+    background-color: white;
+}
+
+
+/* Baloo 2 bruges til overskrifter */
+h1,
+h2,
+h3 {
+    font-family: "Baloo 2", sans-serif;
+}
+
+
+
+/* ==================================================
+   HEADER
+   ================================================== */
+
+.top-header {
+    height: 120px;
+
+    background-color: #f4cccc;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+}
+
+
+/* Logo */
+.top-header img {
+    width: 50px;
+}
+
+
+
+/* ==================================================
+   NAVIGATION
+   ================================================== */
+
+.navbar {
+    height: 45px;
+
+    background-color: #f8f1e8;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 0 20px;
+
+    border-bottom: 1px solid #C5E89B;
+}
+
+
+/* Søgefelt */
+.search {
+    display: flex;
+
+    align-items: center;
+
+    width: 150px;
+
+    height: 30px;
+
+    padding: 0 10px;
+
+    margin-left: -20px;
+}
+
+
+/* Søgefeltets input */
+.search input {
+    width: 100%;
+
+    outline: none;
+
+    padding: 0 10px;
+
+    background: white;
+
+    border: 1px solid #cccccc;
+
+    border-radius: 20px;
+
+    font-family: "Puritan", sans-serif;
+
+    font-size: 12px;
+}
+
+
+/* Søgeikon */
+.loop {
+    width: 20px;
+
+    height: 20px;
+
+    margin-right: 5px;
+
+    object-fit: contain;
+}
+
+
+
+/* ==================================================
+   BURGER MENU
+   ================================================== */
+
+.burger-menu {
+    background: none;
+
+    border: none;
+
+    font-size: 24px;
+
+    cursor: pointer;
+}
+
+
+/* Selve menuen */
+.burger-pop {
+    display: none;
+
+    position: absolute;
+
+    right: 0;
+
+    width: 170px;
+
+    background-color: #f8f1e8;
+
+    border: 1px solid #ddd;
+
+    z-index: 100;
+}
+
+
+/* Links i menuen */
+.burger-pop a {
+    display: block;
+
+    padding: 7px 10px;
+
+    color: black;
+
+    text-decoration: none;
+
+    font-family: "Puritan", sans-serif;
+
+    border-bottom: 1px solid #ddd;
+}
+
+
+/* Viser menuen */
+.burger-pop.show {
+    display: block;
+}
+
+
+
+/* ==================================================
+   OM DECORIA - INTRODUKTION
+   ================================================== */
+
+.about-intro {
+    padding: 50px 25px 45px;
+
+    border-bottom: 1px solid #C5E89B;
+}
+
+
+/* Den lille tekst over overskriften */
+.intro-small {
+    font-size: 12px;
+
+    margin-bottom: 8px;
+}
+
+
+/* Stor hovedoverskrift */
+.about-intro h1 {
+    font-size: 40px;
+
+    line-height: 1;
+
+    margin-bottom: 20px;
+}
+
+
+/* Kort introduktion */
+.intro-text {
+    font-size: 14px;
+
+    line-height: 1.5;
+
+    max-width: 330px;
+}
+
+
+
+/* ==================================================
+   SEKTIONER
+   ================================================== */
+
+.about-section {
+    padding: 45px 25px;
+}
+
+
+/* Overskrifter til sektionerne */
+.about-section h2 {
+    font-size: 25px;
+
+    margin-bottom: 20px;
+}
+
+
+/* Tekst i sektionerne */
+.about-section p {
+    font-size: 14px;
+
+    line-height: 1.6;
+
+    margin-bottom: 18px;
+
+    max-width: 500px;
+}
+
+
+/* Sidste tekststykke får ikke ekstra afstand */
+.about-section p:last-child {
+    margin-bottom: 0;
+}
+
+
+
+/* ==================================================
+   VORES MISSION
+   ================================================== */
+
+.mission {
+    background-color: #f7f0e8;
+
+    border-bottom: 1px solid #C5E89B;
+}
+
+
+
+/* ==================================================
+   HVEM ER VI?
+   ================================================== */
+
+.who-are-we {
+    padding-bottom: 55px;
+}
+
+
+
+/* ==================================================
+   INSTAGRAM
+   ================================================== */
+
+.instagram {
+    background-color: #f4cccc;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    text-align: center;
+
+    padding: 15px;
+}
+
+
+/* Instagram tekst */
+.instagram p {
+    font-size: 9px;
+
+    margin-bottom: 5px;
+}
+
+
+/* Instagram logo */
+.instagramlogo {
+    display: block;
+
+    height: auto;
+
+    width: 20px;
+}
+
+
+
+/* ==================================================
+   FOOTER
+   ================================================== */
+
+footer {
+    background-color: #f7f0e8;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 10px 15px;
+}
+
+
+/* Logo i footer */
+.footer-logo {
+    display: flex;
+
+    justify-content: center;
+
+    width: 15px;
+
+    height: 15px;
+}
+
+
+/* Footer tekst */
+footer p {
+    font-size: 8px;
+}
+
+
+
+/* ==================================================
+   STØRRE SKÆRME
+   ================================================== */
+
+/* Når skærmen er større end 768px */
+@media (min-width: 768px) {
+
+
+    /* Mere luft omkring intro */
+    .about-intro {
+        padding: 70px 15%;
+    }
+
+
+    /* Mere luft omkring sektionerne */
+    .about-section {
+        padding: 60px 15%;
+    }
+
+
+    /* Mission får også mere luft */
+    .mission {
+        padding: 60px 15%;
+    }
+
+
+    /* Giver teksten en passende størrelse */
+    .about-section p {
+        max-width: 650px;
+
+        font-size: 16px;
+    }
+
+
+    /* Større overskrift */
+    .about-intro h1 {
+        font-size: 55px;
+    }
+
+}
