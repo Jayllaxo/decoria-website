@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decoria - Design din egen plakat</title>
+    <link rel="stylesheet" href="design.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700&family=Puritan:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="top-header">
+            <a href="index.html">
+                <img src="images/decoria logo ramme.png" alt="Decoria logo">
+            </a>
+        </div>
+
+        <nav class="navbar">
+            <div class="search">
+                <img src="images/søge loop.png" alt="Søge ikon" class="loop">
+                <input type="search" placeholder="Søg">
+            </div>
+            <button class="burger-menu" id="burgerMenu" aria-label="Åbn menu" aria-expanded="false">☰</button>
+        </nav>
+
+        <div class="burger-pop" id="burgerPop">
+            <a href="#designer">Design</a>
+            <a href="#pakker">Populære design</a>
+            <a href="#pakker">Pre-pakker</a>
+            <a href="#saadan">Inspiration</a>
+            <a href="om-os.html">Om os</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="designer" id="designer">
+            <h2>Design din egen plakat</h2>
+
+            <div class="designer-indhold">
+                <div class="valg-kolonne">
+                    <h3>Baggrund</h3>
+                    <button class="valg valgt" data-type="baggrund" data-value="striber">
+                        <span class="farve striber"></span>
+                        Striber
+                    </button>
+                    <button class="valg" data-type="baggrund" data-value="tern">
+                        <span class="farve tern"></span>
+                        Tern
+                    </button>
+                    <button class="valg" data-type="baggrund" data-value="boelger">
+                        <span class="farve boelger"></span>
+                        Bølger
+                    </button>
+                    <button class="valg" data-type="baggrund" data-value="prikker">
+                        <span class="farve prikker"></span>
+                        Prikker
+                    </button>
+                </div>
+
+                <div class="preview-omraade">
+                    <h3>Dit design</h3>
+                    <div class="plakat-ramme guld" id="rammePreview">
+                        <div class="plakat striber" id="plakatPreview">
+                            <div class="motiv">
+                                <div class="blomst orange" id="blomstPreview">
+                                    <span class="stilk stilk-1"></span>
+                                    <span class="stilk stilk-2"></span>
+                                    <span class="stilk stilk-3"></span>
+                                    <span class="blomsterhoved blomst-1"></span>
+                                    <span class="blomsterhoved blomst-2"></span>
+                                    <span class="blomsterhoved blomst-3"></span>
+                                </div>
+                                <div class="vase hvid" id="vasePreview"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <p id="designTekst">Stribet baggrund, hvid vase og guldramme.</p>
+                </div>
+
+                <div class="valg-kolonne">
+                    <h3>Vase</h3>
+                    <button class="valg valgt" data-type="vase" data-value="hvid">
+                        <span class="vase-ikon hvid"></span>
+                        Hvid
+                    </button>
+                    <button class="valg" data-type="vase" data-value="terrakotta">
+                        <span class="vase-ikon terrakotta"></span>
+                        Terrakotta
+                    </button>
+                    <button class="valg" data-type="vase" data-value="blaa">
+                        <span class="vase-ikon blaa"></span>
+                        Blå
+                    </button>
+                    <button class="valg" data-type="vase" data-value="sort">
+                        <span class="vase-ikon sort"></span>
+                        Sort
+                    </button>
+                </div>
+            </div>
+
+            <div class="ramme-valg">
+                <h3>Ramme</h3>
+                <div class="ramme-knapper">
+                    <button class="rundt-valg valgt" data-type="ramme" data-value="guld">Guld</button>
+                    <button class="rundt-valg" data-type="ramme" data-value="trae">Træ</button>
+                    <button class="rundt-valg" data-type="ramme" data-value="sort">Sort</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="pakker" id="pakker">
+            <div class="sektion-top">
+                <p class="lille-overskrift">Færdige pakker</p>
+                <h2>Vælg en samlet løsning</h2>
+            </div>
+
+            <div class="pakke-liste">
+                <article class="pakke">
+                    <img class="pakke-billede" src="images/efteraars-blomster.png" alt="Efterårsplakat med orange blomster i en hvid vase">
+                    <h3>Efterår</h3>
+                    <p>Stribet baggrund, orange blomster, hvid vase og guldramme.</p>
+                    <p class="pris">199 kr.</p>
+                    <button class="knap pakke-knap" data-package="efteraar">Brug pakken</button>
+                </article>
+
+                <article class="pakke">
+                    <img class="pakke-billede" src="images/helaars-blomster.png" alt="Helårsplakat med lyse blomster i en mønstret vase">
+                    <h3>Helårsblomster</h3>
+                    <p>Ternet baggrund, lyse blomster, blå vase og træramme.</p>
+                    <p class="pris">189 kr.</p>
+                    <button class="knap pakke-knap" data-package="nordisk">Brug pakken</button>
+                </article>
+
+                <article class="pakke">
+                    <img class="pakke-billede" src="images/stribet-plakat.jpeg" alt="Plakat med rosa og hvide blomster i en stribet vase">
+                    <h3>Farverige striber</h3>
+                    <p>Bølget baggrund, rosa blomster, sort vase og sort ramme.</p>
+                    <p class="pris">209 kr.</p>
+                    <button class="knap pakke-knap" data-package="kontrast">Brug pakken</button>
+                </article>
+            </div>
+        </section>
+
+        <section class="saadan" id="saadan">
+            <h2>Sådan fungerer plakaten</h2>
+            <div class="trin-liste">
+                <div class="trin">
+                    <span>1</span>
+                    <div>
+                        <h3>Vælg motiv</h3>
+                        <p>Find den baggrund, vase og ramme der passer bedst til dit hjem.</p>
+                    </div>
+                </div>
+
+                <div class="trin">
+                    <span>2</span>
+                    <div>
+                        <h3>Se dit design</h3>
+                        <p>Plakaten opdaterer sig med det samme, når du klikker på valgene.</p>
+                    </div>
+                </div>
+
+                <div class="trin">
+                    <span>3</span>
+                    <div>
+                        <h3>Vælg en pakke</h3>
+                        <p>Brug en færdig løsning, hvis du vil hurtigt i gang.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <section class="instagram">
+        <p>Følg os og bliv inspireret</p>
+        <a href="https://www.instagram.com/the_official_decoria/" target="_blank">
+            <img src="images/instaglogo.png" alt="Instagram logo" class="instagramlogo">
+        </a>
+    </section>
+
+    <footer>
+        <div><p>Privatlivspolitik</p></div>
+        <div class="footer-logo">
+            <img src="images/decriatekst.png" alt="Decoria">
+        </div>
+        <div><p>Kontakt<br>Lyngvej 21<br>4800 Køge</p></div>
+    </footer>
+
+    <script src="design.js"></script>
+</body>
+</html>

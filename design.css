@@ -1,0 +1,642 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    color: #111111;
+    background-color: #ffffff;
+    font-family: "Puritan", sans-serif;
+}
+
+main {
+    width: 100%;
+    margin: 0 auto;
+    background-color: #ffffff;
+}
+
+.top-header {
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4cccc;
+}
+
+.top-header img {
+    width: 50px;
+}
+
+.navbar {
+    height: 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    background-color: #f8f1e9;
+    border-bottom: 1px solid #c5e89b;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    width: 150px;
+    height: 30px;
+    padding: 0 10px;
+    margin-left: -20px;
+}
+
+.search input {
+    width: 100%;
+    outline: 0;
+    padding: 0 10px;
+    border: 1px solid #cccccc;
+    border-radius: 20px;
+    background-color: #ffffff;
+    font-family: "Puritan", sans-serif;
+    font-size: 12px;
+}
+
+.loop {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    object-fit: contain;
+}
+
+.burger-menu {
+    border: 0;
+    background: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.burger-pop {
+    display: none;
+    position: absolute;
+    right: 0;
+    z-index: 100;
+    width: 170px;
+    border: 1px solid #dddddd;
+    background-color: #f8f1e8;
+}
+
+.burger-pop a {
+    display: block;
+    padding: 7px 10px;
+    border-bottom: 1px solid #dddddd;
+    color: #000000;
+    font-family: "Puritan", sans-serif;
+    text-decoration: none;
+}
+
+.burger-pop.show {
+    display: block;
+}
+
+.lille-overskrift {
+    margin: 0 0 4px;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Baloo 2", sans-serif;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin-top: 0;
+}
+
+h1 {
+    margin-bottom: 12px;
+    font-size: 34px;
+    line-height: 0.9;
+    font-weight: 900;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    text-align: center;
+}
+
+h3 {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+p {
+    line-height: 1.25;
+}
+
+.knap {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 150px;
+    min-height: 42px;
+    padding: 10px 18px;
+    border: 0;
+    border-radius: 8px;
+    color: #111111;
+    background-color: #aec0d8;
+    font-size: 15px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.designer,
+.pakker,
+.saadan {
+    padding: 32px 14px;
+    border-top: 1px solid #c9c9c9;
+}
+
+.designer {
+    background-color: #f3eee8;
+    border-top: 0;
+}
+
+.designer-indhold {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 6px;
+}
+
+.valg-kolonne {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 0 0 64px;
+    width: 64px;
+}
+
+.valg-kolonne h3,
+.preview-omraade h3 {
+    font-size: 17px;
+}
+
+.valg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    width: 64px;
+    margin-bottom: 14px;
+    padding: 7px 2px;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    background-color: transparent;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.valg.valgt,
+.rundt-valg.valgt {
+    border-color: #111111;
+    background-color: #ffffff;
+}
+
+.farve,
+.vase-ikon {
+    display: block;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: 2px solid #ffffff;
+}
+
+.farve.striber,
+.plakat.striber {
+    background-color: #f9eee9;
+    background-image: repeating-linear-gradient(90deg, transparent 0 13px, #e7a5ab 13px 23px);
+}
+
+.farve.tern,
+.plakat.tern {
+    background-color: #f7f0df;
+    background-image: linear-gradient(#aebf9f 2px, transparent 2px),
+        linear-gradient(90deg, #aebf9f 2px, transparent 2px);
+    background-size: 22px 22px;
+}
+
+.farve.boelger,
+.plakat.boelger {
+    background-color: #dbe5ef;
+    background-image: repeating-radial-gradient(ellipse at 0 50%, transparent 0 11px, #8fa8bf 12px 15px, transparent 16px 28px);
+    background-size: 38px 34px;
+}
+
+.farve.prikker,
+.plakat.prikker {
+    background-color: #f5dfb6;
+    background-image: radial-gradient(#cb765f 3px, transparent 4px);
+    background-size: 18px 18px;
+}
+
+.vase-ikon {
+    border-radius: 14px 14px 24px 24px;
+}
+
+.vase-ikon.hvid,
+.vase.hvid {
+    background-color: #f7f3e9;
+}
+
+.vase-ikon.terrakotta,
+.vase.terrakotta {
+    background-color: #bd6949;
+}
+
+.vase-ikon.blaa,
+.vase.blaa {
+    background-color: #6689ab;
+}
+
+.vase-ikon.sort,
+.vase.sort {
+    background-color: #202020;
+}
+
+.preview-omraade {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    min-width: 0;
+}
+
+.plakat {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    transition: background-color 0.2s, background-image 0.2s;
+}
+
+.plakat-ramme {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 124px;
+    height: 167px;
+    padding: 0;
+    background-color: transparent;
+    box-shadow: 0 5px 12px rgba(46, 35, 24, 0.15);
+}
+
+.plakat-ramme.guld {
+    border: 5px solid #b8903f;
+}
+
+.plakat-ramme.trae {
+    border: 5px solid #8b6148;
+}
+
+.plakat-ramme.sort {
+    border: 5px solid #111111;
+}
+
+.motiv {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    height: 100%;
+}
+
+.blomst {
+    position: relative;
+    width: 78px;
+    height: 70px;
+    margin-bottom: -21px;
+}
+
+.stilk {
+    position: absolute;
+    bottom: 0;
+    left: 38px;
+    width: 3px;
+    height: 56px;
+    background-color: #496641;
+    transform-origin: bottom;
+}
+
+.stilk-1 { transform: rotate(-28deg); }
+.stilk-2 { transform: rotate(2deg); }
+.stilk-3 { transform: rotate(28deg); }
+
+.blomsterhoved {
+    position: absolute;
+    width: 27px;
+    height: 27px;
+    border-radius: 50%;
+    box-shadow: inset 5px 2px 0 rgba(255, 255, 255, 0.22), 0 2px 0 rgba(64, 40, 24, 0.12);
+}
+
+.blomst-1 { left: 3px; top: 12px; }
+.blomst-2 { left: 26px; top: 0; }
+.blomst-3 { right: 2px; top: 15px; }
+
+.blomst.orange .blomsterhoved { background-color: #d96a43; }
+.blomst.orange .blomst-2 { background-color: #edb45a; }
+.blomst.lys .blomsterhoved { background-color: #f8f0df; }
+.blomst.lys .blomst-2 { background-color: #e3cfa4; }
+.blomst.rosa .blomsterhoved { background-color: #e8899c; }
+.blomst.rosa .blomst-2 { background-color: #f3b4bd; }
+
+.vase {
+    position: relative;
+    z-index: 2;
+    width: 48px;
+    height: 60px;
+    margin-top: -6px;
+    border: 2px solid #77745b;
+    border-radius: 8px 8px 14px 14px;
+    clip-path: polygon(28% 0, 72% 0, 94% 30%, 82% 100%, 18% 100%, 6% 30%);
+}
+
+#designTekst {
+    min-height: 38px;
+    margin: 12px 0 0;
+    font-size: 13px;
+    text-align: center;
+}
+
+.ramme-valg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 24px;
+}
+
+.ramme-knapper {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+.rundt-valg {
+    width: 62px;
+    height: 62px;
+    border: 2px solid transparent;
+    border-radius: 50%;
+    background-color: #dadada;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.sektion-top {
+    text-align: center;
+}
+
+.pakke-liste {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.pakke {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 18px;
+    border-radius: 8px;
+    background-color: #f8f1e9;
+}
+
+.pakke-billede {
+    width: 100%;
+    aspect-ratio: 4 / 5;
+    height: auto;
+    margin-bottom: 16px;
+    border: 0;
+    border-radius: 4px;
+    object-fit: cover;
+}
+
+.pakke h3 {
+    margin-bottom: 6px;
+}
+
+.pakke p {
+    margin-bottom: 10px;
+}
+
+.pris {
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.pakke-knap {
+    align-self: center;
+}
+
+.saadan {
+    background-color: #ffffff;
+}
+
+.trin-liste {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.trin {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+}
+
+.trin span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 30px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #f1ae75;
+    font-weight: 900;
+}
+
+.trin h3 {
+    margin-bottom: 4px;
+    font-size: 17px;
+}
+
+.trin p {
+    margin-bottom: 0;
+    font-size: 14px;
+}
+
+.instagram {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    background-color: #f4cccc;
+    text-align: center;
+}
+
+.instagram p {
+    margin: 0 0 5px;
+    font-size: 9px;
+}
+
+.instagramlogo {
+    display: block;
+    width: 20px;
+    height: auto;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    background-color: #f7f0e8;
+}
+
+footer p {
+    margin: 0;
+    font-size: 8px;
+}
+
+.footer-logo {
+    display: flex;
+    justify-content: center;
+    width: 15px;
+    height: 15px;
+}
+
+.footer-logo img {
+    height: 15px;
+    width: auto;
+}
+
+@media (min-width: 390px) {
+    .designer,
+    .pakker,
+    .saadan {
+        padding-right: 24px;
+        padding-left: 24px;
+    }
+
+    .designer-indhold {
+        gap: 10px;
+    }
+
+    .valg-kolonne {
+        flex-basis: 72px;
+        width: 72px;
+    }
+
+    .valg {
+        width: 70px;
+        font-size: 13px;
+    }
+
+    .farve,
+    .vase-ikon {
+        width: 54px;
+        height: 54px;
+    }
+
+    .plakat {
+        width: 100%;
+        height: 100%;
+    }
+
+    .plakat-ramme {
+        width: 142px;
+        height: 192px;
+    }
+}
+
+@media (min-width: 760px) {
+    main {
+        max-width: 1100px;
+    }
+
+    .designer,
+    .pakker,
+    .saadan {
+        padding: 48px 58px;
+    }
+
+    .designer-indhold {
+        max-width: 820px;
+        margin: 0 auto;
+        gap: 34px;
+    }
+
+    .valg-kolonne {
+        flex-basis: 150px;
+        width: 150px;
+    }
+
+    .valg {
+        width: 120px;
+    }
+
+    .farve,
+    .vase-ikon {
+        width: 74px;
+        height: 74px;
+    }
+
+    .plakat-ramme {
+        width: 260px;
+        height: 350px;
+    }
+
+    .blomst {
+        width: 110px;
+        height: 96px;
+    }
+
+    .stilk {
+        left: 53px;
+        height: 78px;
+    }
+
+    .blomsterhoved {
+        width: 36px;
+        height: 36px;
+    }
+
+    .blomst-1 { left: 5px; top: 16px; }
+    .blomst-2 { left: 37px; top: 0; }
+    .blomst-3 { right: 3px; top: 20px; }
+
+    .vase {
+        width: 72px;
+        height: 90px;
+    }
+
+    .pakke-liste {
+        flex-direction: row;
+    }
+
+    .pakke {
+        flex: 1;
+    }
+
+    .trin-liste {
+        max-width: 680px;
+        margin: 0 auto;
+    }
+}
